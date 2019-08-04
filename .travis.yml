@@ -1,4 +1,7 @@
 sudo: required
 dist: trusty
+libraries:
+- name: ssl
+  version: latest
 script:
   - bash -xve ./test/travis_ros_install.bash
