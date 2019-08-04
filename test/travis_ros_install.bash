@@ -12,7 +12,9 @@ cd ..
 git clone https://github.com/naoya-nakama/ros_setup_scripts_Ubuntu18.04_server.git
 cd ./ros_setup_scripts_Ubuntu18.04_server
 bash ./step0.bash
+#step0 is complete
 bash ./step1.bash
+#step1 is complete
 
 #catkin setup
 mkdir -p ~/catkin_ws/src
