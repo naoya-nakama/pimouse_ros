@@ -31,7 +31,7 @@ class LightsensorTest(unittest.TestCase):
         rospy.set_param('lightsensors_freq',10)
         time.sleep(2)
         with open("/dev/rtlightsensor0","w") as f:
-            f.write("-1 0 123 4321\n")
+            f.write("4321 123 0 -1\n")
 
         time.sleep(3)
         self.assertFalse(self.count == 0,"cannot subscribe the topic") 
